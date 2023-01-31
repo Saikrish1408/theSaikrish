@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    char ch;
+    scanf("%c",&ch);
+    char next_char,next_2_char;
+    next_char = ch+1;
+    next_2_char = ch+2;
+    if(next_char != 'a' && next_char != 'e' && next_char != 'i' && next_char != 'o' && next_char != 'u')
+    printf("%c",next_char);
+    else if(next_char == 'a' || next_char == 'e' || next_char == 'i' || next_char == 'o' || next_char == 'u')
+    printf("%c",next_2_char+1);
+
+    return 0;
+}
